@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zseni Andrea | Némettanár</title>
-  <meta name="description" content="Zseni Andrea némettanár személyre szabott nyelvoktatással, nyelvvizsga-felkészítéssel, üzleti némettel, fordítással és tolmácsolással." />
+  <meta
+    name="description"
+    content="Zseni Andrea némettanár személyre szabott nyelvoktatással, nyelvvizsga-felkészítéssel, üzleti némettel, fordítással és tolmácsolással."
+  />
   <style>
     :root {
       --bg: #f7f4ef;
@@ -18,14 +21,25 @@
       --dark: #1f1a16;
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
     }
 
     .container {
@@ -40,7 +54,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 32px;
       padding: 72px 0;
       align-items: center;
@@ -60,9 +74,17 @@
       line-height: 1.2;
     }
 
-    h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
-    h2 { font-size: clamp(1.8rem, 4vw, 2.2rem); }
-    h3 { font-size: 1.2rem; }
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.2rem);
+    }
+
+    h3 {
+      font-size: 1.15rem;
+    }
 
     .lead {
       font-size: 1.15rem;
@@ -92,7 +114,9 @@
       color: white;
     }
 
-    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-primary:hover {
+      background: var(--accent-dark);
+    }
 
     .btn-secondary {
       background: white;
@@ -100,17 +124,46 @@
       border-color: var(--line);
     }
 
-    .btn-secondary:hover { border-color: var(--accent); }
+    .btn-secondary:hover {
+      border-color: var(--accent);
+    }
 
     .card {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 24px;
       padding: 28px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
     }
 
-    section { padding: 72px 0; }
+    .teacher-card {
+      text-align: center;
+    }
+
+    .teacher-photo {
+      width: 100%;
+      max-width: 340px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      margin: 0 auto 22px;
+      border-radius: 22px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+      border: 1px solid var(--line);
+      background: #f3f3f3;
+    }
+
+    .teacher-card p {
+      text-align: left;
+    }
+
+    .teacher-card h2,
+    .teacher-card h3 {
+      text-align: left;
+    }
+
+    section {
+      padding: 72px 0;
+    }
 
     .grid-2 {
       display: grid;
@@ -167,8 +220,8 @@
     }
 
     .testimonial {
-      background: rgba(255,255,255,0.08);
-      border-color: rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.08);
     }
 
     .testimonial .author {
@@ -200,8 +253,17 @@
         grid-template-columns: 1fr;
       }
 
-      .hero-grid { padding: 48px 0; }
-      section { padding: 52px 0; }
+      .hero-grid {
+        padding: 48px 0;
+      }
+
+      section {
+        padding: 52px 0;
+      }
+
+      .teacher-photo {
+        max-width: 300px;
+      }
     }
   </style>
 </head>
@@ -211,7 +273,9 @@
       <div>
         <div class="eyebrow">Német nyelvoktatás személyre szabva</div>
         <h1>Zseni Andrea</h1>
-        <p style="font-size:1.6rem; margin-top:-6px; color:#4b433b;">Némettanár, fordító és tolmács</p>
+        <p style="font-size:1.6rem; margin-top:-6px; color:#4b433b;">
+          Némettanár, fordító és tolmács
+        </p>
         <p class="lead">
           1992 óta tanítok németet. Célom, hogy tanítványaim magabiztosan,
           valódi helyzetekben is használható tudással fejlődjenek — legyen szó
@@ -223,16 +287,29 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card teacher-card">
+        <img
+          src="andrea.jpg"
+          alt="Zseni Andrea némettanár"
+          class="teacher-photo"
+        />
+
         <h2>Miért engem válassz?</h2>
+
         <h3>Személyre szabott oktatás</h3>
-        <p>Minden óra az egyéni célokhoz, szinthez és tanulási tempóhoz igazodik.</p>
+        <p>
+          Minden óra az egyéni célokhoz, szinthez és tanulási tempóhoz igazodik.
+        </p>
 
         <h3>Interaktív, gyakorlatias módszer</h3>
-        <p>Nem csak szabályokat tanítok, hanem használható nyelvi kompetenciát építünk.</p>
+        <p>
+          Nem csak szabályokat tanítok, hanem használható nyelvi kompetenciát építünk.
+        </p>
 
         <h3>Jó hangulat, valódi fejlődés</h3>
-        <p>A célorientált, oldott légkör segít leküzdeni a megszólalástól való félelmet is.</p>
+        <p>
+          A célorientált, oldott légkör segít leküzdeni a megszólalástól való félelmet is.
+        </p>
       </div>
     </div>
   </header>
@@ -285,19 +362,31 @@
         <div class="methods">
           <div class="method-item">
             <h3>Személyiségközpontú megközelítés</h3>
-            <p>Kiemelt figyelmet kap a motiváció fenntartása, a tananyag rugalmas alakítása és a tanuló aktuális céljaihoz igazított fejlődés.</p>
+            <p>
+              Kiemelt figyelmet kap a motiváció fenntartása, a tananyag rugalmas
+              alakítása és a tanuló aktuális céljaihoz igazított fejlődés.
+            </p>
           </div>
           <div class="method-item">
             <h3>Gyakorlati kommunikáció</h3>
-            <p>Az órák fókusza a valós élethelyzetekben használható nyelvtudás, a magabiztos megszólalás és a nyelvi gátak oldása.</p>
+            <p>
+              Az órák fókusza a valós élethelyzetekben használható nyelvtudás,
+              a magabiztos megszólalás és a nyelvi gátak oldása.
+            </p>
           </div>
           <div class="method-item">
             <h3>Logikus, érthető rendszer</h3>
-            <p>Nem száraz szabályok memorizálása történik, hanem a német nyelv belső összefüggéseinek megértése és tudatos használata.</p>
+            <p>
+              Nem száraz szabályok memorizálása történik, hanem a német nyelv belső
+              összefüggéseinek megértése és tudatos használata.
+            </p>
           </div>
           <div class="method-item">
             <h3>Célorientált fejlődés</h3>
-            <p>Legyen szó nyelvvizsgáról, állásról vagy szakmai kommunikációról, az oktatás mindig a konkrét célhoz igazodik.</p>
+            <p>
+              Legyen szó nyelvvizsgáról, állásról vagy szakmai kommunikációról,
+              az oktatás mindig a konkrét célhoz igazodik.
+            </p>
           </div>
         </div>
       </div>
@@ -308,15 +397,25 @@
         <h2>Vélemények</h2>
         <div class="testimonials">
           <div class="testimonial">
-            <p>„Annyira személyre szabottan tanított, amire szükségem volt, hogy most, 8 év után is erre építve használom, és szeretem a német nyelvet.”</p>
+            <p>
+              „Annyira személyre szabottan tanított, amire szükségem volt, hogy most,
+              8 év után is erre építve használom, és szeretem a német nyelvet.”
+            </p>
             <div class="author">— M. Zsuzsa</div>
           </div>
           <div class="testimonial">
-            <p>„Figyelt az aktuális igényekre, a célomra, és rám szabta a feladatokat. Több mint 10 év kihagyás után újra meg mertem szólalni németül, és Andival sikerült!”</p>
+            <p>
+              „Figyelt az aktuális igényekre, a célomra, és rám szabta a feladatokat.
+              Több mint 10 év kihagyás után újra meg mertem szólalni németül,
+              és Andival sikerült!”
+            </p>
             <div class="author">— T. Viktória</div>
           </div>
           <div class="testimonial">
-            <p>„Minimális nyelvtudással indultam, és végül a szakmai némettel is elég jól elboldogultam.”</p>
+            <p>
+              „Minimális nyelvtudással indultam, és végül a szakmai némettel
+              is elég jól elboldogultam.”
+            </p>
             <div class="author">— H. L. Erzsébet</div>
           </div>
         </div>
@@ -328,8 +427,9 @@
         <div class="card contact-box">
           <h2>Kapcsolat</h2>
           <p>
-            Várom azok jelentkezését, akik szeretnének magabiztosabban kommunikálni németül,
-            nyelvvizsgára készülnek, vagy szakmai céljaikhoz keresnek személyre szabott támogatást.
+            Várom azok jelentkezését, akik szeretnének magabiztosabban kommunikálni
+            németül, nyelvvizsgára készülnek, vagy szakmai céljaikhoz keresnek
+            személyre szabott támogatást.
           </p>
           <p><strong>E-mail:</strong> sajat.email@pelda.hu</p>
           <p><strong>Telefon:</strong> +36 30 123 4567</p>
